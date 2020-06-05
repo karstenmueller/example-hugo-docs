@@ -1,0 +1,12 @@
+# hugo
+/public/*
+!/public/.gitkeep
+
+# local stuff
+.DS_Store
+*~
+*.local
+.vscode/
+
+# themes (added as git submodules)
+themes/

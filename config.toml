@@ -1,0 +1,50 @@
+baseURL = "https://pages.github.io"
+languageCode = "en-US"
+defaultContentLanguage = "en"
+themeVariant = "mine"
+
+title = "Hugo Learn Documentation"
+theme = "learn"
+metaDataFormat = "yaml"
+defaultContentLanguageInSubdir= true
+relativeURLs = true
+
+[params]
+editURL = "https://github.com/karstenmueller/example-hugo-docs/edit/master/content/"
+description = "Documentation for Hugo Learn Theme"
+author = "Mathieu Cornic"
+showVisitedLinks = false
+disableBreadcrumb = false
+disableNextPrev = false
+disableLanguageSwitchingButton = true
+ghrepo = "https://github.com/karstenmueller/example-hugo-docs/"
+branch = "master"
+pygmentsUseClasses = true
+pygmentsCodeFences = true
+pygmentsCodefencesGuessSyntax = true
+pygmentsStyle = "tango"
+
+[outputs]
+home = [ "HTML", "JSON"]
+page = [ "HTML" ]
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-tags'></i> Tags"
+url = "/tags"
+weight = 5
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-tags'></i> Tags"
+url = "/tags/tutorial"
+weight = 4
+
+[[menu.shortcuts]]
+name = "<i class='fab fa-fw fa-github'></i> GitHub repo"
+identifier = "ds"
+url = "https://github.com/karstenmueller/example-hugo-docs/"
+weight = 10
+
+[[menu.shortcuts]]
+name = "<i class='fas fa-fw fa-camera'></i> Showcases"
+url = "showcase"
+weight = 11
